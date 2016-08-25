@@ -1,0 +1,30 @@
+// ==UserScript==
+// @name       CTR Shills
+// @namespace  http://www.reddit.com
+// @version    0.1
+// @description  Find the Political SHILLS of Reddit
+// @match https://www.reddit.com/r/politics/*
+// @match https://www.reddit.com/r/politics
+// @match http://www.reddit.com/r/politics/*
+// @match http://www.reddit.com/r/politics
+// @copyright  2016+
+// @require http://code.jquery.com/jquery-latest.js
+// @require https://raw.githubusercontent.com/majorchampx1/shills/master/shills-list1.js
+// @resource shillCSS https://raw.githubusercontent.com/majorchampx1/shills/master/shills.css
+// @grant           GM_addStyle
+// @grant           GM_getResourceText
+// ==/UserScript==
+
+var cssTxt  = GM_getResourceText ("shillCSS"),
+    shills;
+
+GM_addStyle (cssTxt);
+$(document).ready(function() {
+    $(".content[role='main']").prepend("<p style='text-align: center; padding: 10px;'><button id='show-shill'>Find The Shills</button><p>");
+    $( "button#show-shill" ).on( "click", function() {
+        $.each( shills, function( index, value ){
+           $(".tagline a.author:contains('" + value + "')").closest(".entry").addClass("shill-row-thing"); 
+        });
+    });
+
+});
