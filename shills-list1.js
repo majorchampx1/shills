@@ -49,6 +49,5 @@ var shills = [
 "yolandapacotganempel",
 "simpanpesan",
 "dabit4433",
-"rebecca",
-"stagggerleee"
+"rebecca232"
 ]
