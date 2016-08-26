@@ -6,7 +6,7 @@
   border-style: solid !important;
   border-color: rgb(218, 28, 42) rgb(40, 72, 165) !important;
   z-index: 2001;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   margin-left: -85px;
   position: fixed;
@@ -20,7 +20,7 @@
 }
 
 .shill-shade {
-  min-height: 70px;
+  min-height: 75px;
   border-top: solid 2px #ddd;
   background: #fff; 
   opacity:0.9; 
