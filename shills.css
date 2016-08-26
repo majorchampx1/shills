@@ -21,6 +21,7 @@
 
 .shill-shade {
   min-height: 75px;
+  z-index:2000;
   border-top: solid 2px #ddd;
   background: #fff; 
   opacity:0.9; 
