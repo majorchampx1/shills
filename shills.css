@@ -4,7 +4,12 @@
   background: #fff url(https://i.imgur.com/yrBry1A.png) right center no-repeat !important; 
   border-width: 6px !important;
   border-style: solid !important;
-  border-color: rgb(218, 28, 42) rgb(40, 72, 165) !important;
+  border-color: rgb(218, 28, 42) rgb(40, 72, 165) !important
+  position: fixed;
+  z-index: 2001;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -85px;
 }
 .shill-row-thing {
   background: url('https://i.imgur.com/yrBry1A.png') right center no-repeat !important;
@@ -12,4 +17,15 @@
   border-right: solid 9px #2848a5 !important;
   border-bottom: solid 9px #da1c2a !important;
   border-top: solid 9px #da1c2a !important;
+}
+
+.shill-shade {
+  min-height: 70px;
+  border-top: solid 2px #ddd;
+  background: #fff; 
+  opacity:0.9; 
+  position: fixed; 
+  bottom: 0px; 
+  right:0px;
+  left:0px; 
 }
