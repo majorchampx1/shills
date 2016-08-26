@@ -10,6 +10,7 @@
   bottom: 20px;
   left: 50%;
   margin-left: -85px;
+  position: fixed;
 }
 .shill-row-thing {
   background: url('https://i.imgur.com/yrBry1A.png') right center no-repeat !important;
