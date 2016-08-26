@@ -4,8 +4,7 @@
   background: #fff url(https://i.imgur.com/yrBry1A.png) right center no-repeat !important; 
   border-width: 6px !important;
   border-style: solid !important;
-  border-color: rgb(218, 28, 42) rgb(40, 72, 165) !important
-  position: fixed;
+  border-color: rgb(218, 28, 42) rgb(40, 72, 165) !important;
   z-index: 2001;
   bottom: 20px;
   left: 50%;
