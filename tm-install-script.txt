@@ -19,8 +19,9 @@ var cssTxt  = GM_getResourceText ("shillCSS"),
     shills;
 
 GM_addStyle (cssTxt);
+
 $(document).ready(function() {
-    $(".content[role='main']").prepend("<p style='text-align: center; padding: 10px;'><button id='show-shill'>Find The Shills</button><p>");
+    $(".content[role='main']").prepend("<div class='shill-shade'></div><button id='show-shill'>Find The Shills</button>");
     $( "button#show-shill" ).on( "click", function() {
         $.each( shills, function( index, value ){
            $(".tagline a.author:contains('" + value + "')").closest(".entry").addClass("shill-row-thing"); 
