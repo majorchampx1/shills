@@ -86,5 +86,8 @@ var shills = [
 "HayleeHaylee",
 "KarinaAriel",
 "SabrinaKelsey",
-"GiselleGiselle"
+"GiselleGiselle",
+"faltu4567",
+"Clinton-Kaine",
+"throwawayforelection"
 ]
